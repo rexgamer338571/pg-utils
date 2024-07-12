@@ -1,15 +1,9 @@
-const select = document.createElement('select');
+var select = document.getElementById("fieldBCR");
 
-for (const key in bcrs) {
-	if (bcrs.hasOwnProperty(key)) {
-		const option = document.createElement("option");
-		option.textContent = key;
-		option.value = bcrs[key]
-		select.appendChild(option);
-	}
+for (key in bcrs) {
+	select.options[select.options.length] = new Option(key, bcrs[key]);
 }
 
-document.getElementById("fieldBCR").appendChild(select);
 
 function calc() {
 	const lvl = parseInt(document.getElementById("fieldCPM").value);
