@@ -1,10 +1,10 @@
-var select = document.getElementById("fieldBCR");
+function populate() {
+	var select = document.getElementById("fieldBCR");
 
-for ( index in bcrs ) {
-	select.add(new Option(index, bcrs[index]));
+	for ( index in bcrs ) {
+		select.add(new Option(index, bcrs[index]));
+	}
 }
-
-alert("a");
 
 function calc() {
 	
