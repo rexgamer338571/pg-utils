@@ -4,7 +4,7 @@
 function calc() {
 	var select = document.getElementById("fieldBCR");
 	for ( index in bcrs ) {
-		select.options[select.options.length] = new Option(index, bcrs[index]);
+		select.add(new Option(index, bcrs[index]));
 	}
 	
 	const lvl = parseInt(document.getElementById("fieldCPM").value);
