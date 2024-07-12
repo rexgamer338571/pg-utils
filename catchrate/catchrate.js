@@ -1,11 +1,12 @@
-var select = document.getElementById("fieldBCR");
 
-for (key in bcrs) {
-	select.options[select.options.length] = new Option(key, bcrs[key]);
-}
 
 
 function calc() {
+	var select = document.getElementById("fieldBCR");
+	for ( index in bcrs ) {
+		select.options[select.options.length] = new Option(index, bcrs[index]);
+	}
+	
 	const lvl = parseInt(document.getElementById("fieldCPM").value);
 
 
