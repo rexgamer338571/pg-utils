@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Utils</title>
+    <script src="./catchrate.js"></script>
+</head>
+<body>
+    <h1>Catch Rate</h1>
+    <form id="optionForm">
+        <label for="fieldBall">Ball</label>
+        <select id="fieldBall" name="fieldBall">
+            <option value="1.0">PokeBall</option>
+            <option value="1.5">Great Ball</option>
+            <option value="2">Ultra Ball</option>
+            <option value="20">Beast Ball (UB only)</option>
+        </select>
+        <br><br>
+
+        <label for="fieldBerry">Berry</label>
+        <select id="fieldBerry" name="fieldBerry">
+            <option value="1.0">None</option>
+            <option value="1.5">Razz Berry</option>
+            <option value="1.8">Silver Pinap Berry</option>
+            <option value="2.5">Golden Razz Berry</option>
+        </select>
+        <br><br>
+
+        <label for="fieldThrow">Throw</label>
+        <select id="fieldThrow" name="fieldThrow">
+            <option value="1.0">None</option>
+            <option value="1.15">Nice</option>
+            <option value="1.5">Great</option>
+            <option value="1.85">Excellent</option>
+        </select>
+        <br><br>
+
+        <label for="fieldCPM">Level</label>
+        <input id="fieldCPM"></input>        
+
+        <br><br>
+
+        <label for="fieldBCR"><a href="https://m.bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_catch_rate_(GO)#List_of_Pokemon">Base Catch Rate (%)</a></label>
+        <input id="fieldBCR"></input>
+
+        <br><br>
+
+        <button type="button" onclick="calc()">Calculate</button>
+    </form>
+
+    <p id="result"></p>
+</body>
+</html>
