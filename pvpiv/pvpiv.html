@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PvP IV Calculator</title>
+  </head>
+  <body>
+    <label for="atk">Attack</label>
+    <select id="atk"></select>
+
+    <label for="def">Defense</label>
+    <select id="def"></select>
+
+    <label for="sta">Stamina</label>
+    <select id="sta"></select>
+
+    <script>
+      const stats = ["atk", "def", "sta"];
+
+      for ( i in stats ) {
+        const elem = document.getElementById(i);
+
+        for ( var i = 0; i < 15; i++ ) {
+          elem.add(new Option(i, i));
+        }
+      }
+    </script>
+  </body>
+</html
