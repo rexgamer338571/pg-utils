@@ -23,7 +23,7 @@
     <script>
       for ( i in stats ) {
         const elem = document.getElementById(stats[i]);
-        const sele = document.getElementById("pokemon");
+        var sele = document.getElementById("pokemon");
         
         for ( var x = 0; x < 16; x++ ) {
           elem.add(new Option(x, x));
