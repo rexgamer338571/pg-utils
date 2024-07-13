@@ -46,7 +46,11 @@
         <select id="fieldBCR"></select>
 
         <script>
-            populate();
+            var select = document.getElementById("fieldBCR");
+
+            for ( index in bcrs ) {
+                select.add(new Option(index, bcrs[index]));
+            }
         </script>
 
         <br><br>
