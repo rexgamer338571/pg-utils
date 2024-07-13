@@ -15,13 +15,23 @@
     <label for="sta">Stamina</label>
     <select id="sta"></select>
 
+    <br><br>
+
+    <label for="pokemon">Pokemon</label>
+    <select id="pokemon"></select>
+
     <script>
       for ( i in stats ) {
         const elem = document.getElementById(stats[i]);
-
+        const sele = document.getElementById("pokemon");
+        
         for ( var x = 0; x < 16; x++ ) {
           elem.add(new Option(x, x));
         }
+      }
+
+      for ( index in baseStats ) {
+        sele.add(new Option(index, index));
       }
     </script>
 
