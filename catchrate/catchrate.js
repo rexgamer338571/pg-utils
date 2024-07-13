@@ -5,12 +5,14 @@ function calc() {
 
 	const cpm = cpms[lvl*2-2]
 
-	const fieldBall = parseFloat(document.getElementById('fieldBall').value);
-	const fieldBerry = parseFloat(document.getElementById('fieldBerry').value);
-	const fieldThrow = parseFloat(document.getElementById('fieldThrow').value);
+	const ball = parseFloat(document.getElementById('fieldBall').value);
+	const berry = parseFloat(document.getElementById('fieldBerry').value);
+	const throw_ = parseFloat(document.getElementById('fieldThrow').value);
+	const curveball = parseFloat(document.getElementById('fieldCurveball').value);
+	const medal = parseFloat(document.getElementById('fieldMedal').value);
 	const baseCatchRate = parseInt(document.getElementById('fieldBCR').value);
 
-	const modifier = fieldBall * fieldBerry * fieldThrow
+	const modifier = ball * berry * throw_ * curveball * medal
 	const dcpm = 2*cpm
 	const bcrFrac = baseCatchRate / 100
 
