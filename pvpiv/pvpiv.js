@@ -18,4 +18,5 @@ function calc() {
   const cpm = cpms[lvl*2-2];
   const _0 = ((stat[0] * Math.sqrt(stat[1]) * Math.sqrt(stat[2]) / 10) * (cpm**2);
   document.getElementById("result").innerHTML = _0;
+  alert(_0);
 }
