@@ -14,7 +14,7 @@ function calc() {
     stat[i] = document.getElementById(rstats[i]).value + baseStats[pokemon][i];
   }
 
-  const lvl = parseFloat(document.getElementById("lvl").value);
+  const lvl = parseInt(document.getElementById("lvl").value);
   alert(lvl);
   const cpm = cpms[lvl*2-2];
   alert(cpm);
