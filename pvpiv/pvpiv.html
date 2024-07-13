@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>PvP IV Calculator</title>
+    <script src="./pvpiv.js">
+    <script src="../data.js">
   </head>
   <body>
     <label for="atk">Attack</label>
@@ -14,8 +16,6 @@
     <select id="sta"></select>
 
     <script>
-      const stats = ["atk", "def", "sta"];
-
       for ( i in stats ) {
         const elem = document.getElementById(stats[i]);
 
