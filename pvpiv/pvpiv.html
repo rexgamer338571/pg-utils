@@ -17,12 +17,17 @@
       const stats = ["atk", "def", "sta"];
 
       for ( i in stats ) {
-        const elem = document.getElementById(i);
+        const elem = document.getElementById(stats[i]);
 
-        for ( var i = 0; i < 15; i++ ) {
-          elem.add(new Option(i, i));
+        for ( var x = 0; x < 16; x++ ) {
+          elem.add(new Option(x, x));
         }
       }
     </script>
+
+    <br><br>
+
+    <button onclick="calc()">Find</button>
+
   </body>
 </html>
