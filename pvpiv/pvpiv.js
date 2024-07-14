@@ -7,10 +7,8 @@ function calc() {
       0.0,
       0.0
     ]
-    const rstats = stats;
-    rstats.reverse()
   
-    for ( i in rstats ) {
+    for ( i in ["sta", "atk", "def"] ) {
       stat[i] = parseFloat(document.getElementById(rstats[i]).value) + baseStats[pokemon][i];
     }
 
